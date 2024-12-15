@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/but_intento"
-        android:layout_width="wrap_content"
+    <CheckBox
+        android:id="@+id/math"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo intento"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="584dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Matemáticas" />
+
+    <CheckBox
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia del Ecuador" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingles" />
+
+        <RadioButton
+            android:id="@+id/radio_dispositivos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dispositivos Móviles" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner_informatica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
