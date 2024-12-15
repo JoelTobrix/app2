@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-        android:name=".materias"
+        android:name=".asignaturas"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
     </activity>
 
         <activity
-            android:name=".mathe"
+            android:name=".mathematicas"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,16 @@
 
 
         <activity
-            android:name=".questionmathe"
+            android:name=".questionmathematicas"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".question2math"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,7 +63,7 @@
         </activity>
 
         <activity
-            android:name=".stories"
+            android:name=".historias"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,7 +73,7 @@
         </activity>
 
         <activity
-            android:name=".questionstories"
+            android:name=".questionhistorias"
             android:exported="true"
             tools:ignore="DuplicateActivity">
             <intent-filter>
@@ -75,7 +84,18 @@
         </activity>
 
         <activity
-            android:name=".ingles"
+            android:name=".question3historias"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".idiomas"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -85,7 +105,7 @@
         </activity>
 
         <activity
-            android:name=".questioningles"
+            android:name=".questionidiomas"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -107,6 +127,17 @@
 
         <activity
             android:name=".questionmovil"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".question3movil"
             android:exported="true"
             tools:ignore="DuplicateActivity">
             <intent-filter>

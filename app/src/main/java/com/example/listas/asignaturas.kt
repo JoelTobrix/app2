@@ -3,25 +3,23 @@ package com.example.listas
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import android.view.View
 import android.widget.CheckBox
 import android.widget.RadioButton
 
 
-class materias : AppCompatActivity() {
+class asignaturas : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.materias)
+        setContentView(R.layout.asignaturas)
 
         var matematicas = findViewById<CheckBox>(R.id.math)
         // Agregar un listener al CheckBox
         matematicas.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 // Si el CheckBox está marcado, iniciar una nueva actividad
-                val intent = Intent(this, mathe::class.java)
+                val intent = Intent(this, mathematicas::class.java)
                 startActivity(intent)
             }
 
@@ -30,14 +28,14 @@ class materias : AppCompatActivity() {
         //Agregar listener a CheckBox
         historia.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                val intent = Intent(this, stories ::class.java)
+                val intent = Intent(this, historias ::class.java)
                 startActivity(intent)
             }
         }
         var inglish = findViewById<RadioButton>(R.id.english)
         inglish.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                val intent = Intent(this, ingles ::class.java)
+                val intent = Intent(this, idiomas ::class.java)
                 startActivity(intent)
             }
         }

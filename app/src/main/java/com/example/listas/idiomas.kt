@@ -3,16 +3,12 @@ package com.example.listas
 import android.annotation .SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import android.view.View
 import android.widget.Button
-import android.widget.CheckBox
 import android.widget.RadioButton
 import android.widget.Toast
-import com.example.listas.R
 
-class ingles : AppCompatActivity() {
+class idiomas : AppCompatActivity() {
         @SuppressLint("MissingInflatedId", "SuspiciousIndentation")
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
@@ -41,7 +37,7 @@ class ingles : AppCompatActivity() {
                   // for example, display it in a TextView
                   Toast.makeText(applicationContext, "Selección: $seleccionar", Toast.LENGTH_SHORT).show()
                   // Navegar a pregunta2
-                  val intent = Intent(this, questioningles::class.java)
+                  val intent = Intent(this, questionidiomas::class.java)
                   startActivity(intent)
               }
           }

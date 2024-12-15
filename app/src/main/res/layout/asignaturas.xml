@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <CheckBox
         android:id="@+id/math"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Matemáticas" />
+        android:text="Matemática"
+        android:layout_margin="8dp" />
 
     <CheckBox
         android:id="@+id/history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Historia del Ecuador" />
+        android:text="Historia"
+        android:layout_margin="8dp" />
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
 
         <RadioButton
             android:id="@+id/english"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingles" />
+            android:text="Idiomas"
+            android:layout_margin="8dp" />
 
         <RadioButton
             android:id="@+id/radio_dispositivos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dispositivos Móviles" />
+            android:text="Dispositivos Móviles"
+            android:layout_margin="8dp" />
     </RadioGroup>
-
-    <Spinner
-        android:id="@+id/spinner_informatica"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>
